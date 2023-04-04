@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+    {% if current_user.is_authenticated %}
+        <h1 style="border-bottom: 5px solid #5f788a; display: inline-block; margin-left: 130px;">Sanzar Fertilizer Software</h1>
+        <br>
+        <br style="line-height:70px;">
+         {% if current_user.is_authenticated %}
+             <a class="btn btn-primary btn-lg" href="{{ url_for('main.insert_farmland_data') }}" role="button" id="buttonMenu" style="padding: 10px 20px; font-size: 20px; border-radius: 10px; width:25%; margin-right: 70px; margin-left: 70px;">Add new farm field</a>
+             <a class="btn btn-primary btn-lg" href="{{ url_for('main.land_selection') }}" role="button" id="buttonMenu" style="padding: 10px 20px; font-size: 20px; border-radius: 10px; width:25%;">Open existing farm</a>
+         {% endif %}
+
+    {% else %}
+            <h1>Home Page</h1>
+    {% endif %}
+{% endblock content %}
+
+

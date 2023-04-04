@@ -1,0 +1,198 @@
+2023-03-03 14:27:51,286 ERROR Thread-49-12460: Exception on /calculator [POST] [in app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\Maria\anaconda3\envs\ee\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Maria\anaconda3\envs\ee\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Maria\anaconda3\envs\ee\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Maria\anaconda3\envs\ee\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Maria\anaconda3\envs\ee\lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Users\Maria\Documents\Python Scripts\Web\WebApp\routes.py", line 254, in calculator
+    return render_template('results_calculator.html', title='Sanzar Calculator', form = form, fertilizer_measure = fertilizer_measure)
+  File "C:\Users\Maria\anaconda3\envs\ee\lib\site-packages\flask\templating.py", line 148, in render_template
+    return _render(
+  File "C:\Users\Maria\anaconda3\envs\ee\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\Maria\anaconda3\envs\ee\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Maria\anaconda3\envs\ee\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Maria\Documents\Python Scripts\Web\WebApp\templates\results_calculator.html", line 1, in top-level template code
+    {% extends "layout.html" %}
+  File "C:\Users\Maria\Documents\Python Scripts\Web\WebApp\templates\layout.html", line 106, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\Maria\Documents\Python Scripts\Web\WebApp\templates\results_calculator.html", line 26, in block 'content'
+    <td bgcolor="#ffffff">{{fertilizer_measure[2][1]}}- {{fertilizer_measure[2][2]}}- {{fertilizer_measure[2][3]}}-</td>
+  File "C:\Users\Maria\anaconda3\envs\ee\lib\site-packages\jinja2\environment.py", line 466, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: numpy.ndarray object has no element 2
+2023-03-04 17:52:22,436 ERROR Thread-14-4828: Exception on /calculator [POST] [in app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Users\Maria\Documents\Python Scripts\Web\WebApp\routes.py", line 254, in calculator
+    return render_template('results_calculator.html', title='Sanzar Calculator', form = form, fertilizer_measure = fertilizer_measure)
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\flask\templating.py", line 148, in render_template
+    return _render(
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Maria\Documents\Python Scripts\Web\WebApp\templates\results_calculator.html", line 1, in top-level template code
+    {% extends "layout.html" %}
+  File "C:\Users\Maria\Documents\Python Scripts\Web\WebApp\templates\layout.html", line 106, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\Maria\Documents\Python Scripts\Web\WebApp\templates\results_calculator.html", line 22, in block 'content'
+    <td bgcolor="#ffffff">{{fertilizer_measure[1][1]}}- {{fertilizer_measure[1][2]}}- {{fertilizer_measure[1][3]}}-</td>
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\jinja2\environment.py", line 466, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: numpy.ndarray object has no element 1
+2023-03-04 17:58:47,225 ERROR Thread-5-6200: Exception on /calculator [POST] [in app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Users\Maria\Documents\Python Scripts\Web\WebApp\routes.py", line 325, in calculator
+    return render_template(
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\flask\templating.py", line 148, in render_template
+    return _render(
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Maria\Documents\Python Scripts\Web\WebApp\templates\results_calculator.html", line 1, in top-level template code
+    {% extends "layout.html" %}
+  File "C:\Users\Maria\Documents\Python Scripts\Web\WebApp\templates\layout.html", line 106, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\Maria\Documents\Python Scripts\Web\WebApp\templates\results_calculator.html", line 22, in block 'content'
+    <td bgcolor="#ffffff">{{fertilizer_measure[1][1]}}- {{fertilizer_measure[1][2]}}- {{fertilizer_measure[1][3]}}-</td>
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\jinja2\environment.py", line 466, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: numpy.ndarray object has no element 1
+2023-03-04 18:08:11,508 ERROR Thread-5-12848: Exception on /calculator [POST] [in app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Users\Maria\Documents\Python Scripts\Web\WebApp\routes.py", line 317, in calculator
+    return render_template(
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\flask\templating.py", line 148, in render_template
+    return _render(
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Maria\Documents\Python Scripts\Web\WebApp\templates\results_calculator.html", line 1, in top-level template code
+    {% extends "layout.html" %}
+  File "C:\Users\Maria\Documents\Python Scripts\Web\WebApp\templates\layout.html", line 106, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\Maria\Documents\Python Scripts\Web\WebApp\templates\results_calculator.html", line 22, in block 'content'
+    <td bgcolor="#ffffff">{{fertilizer_measure[1][1]}}- {{fertilizer_measure[1][2]}}- {{fertilizer_measure[1][3]}}-</td>
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\jinja2\environment.py", line 466, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: numpy.ndarray object has no element 1
+2023-03-05 01:19:03,154 ERROR Thread-15-14832: Exception on /calculator [POST] [in app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Users\Maria\Documents\Python Scripts\Web\WebApp\routes.py", line 317, in calculator
+    return render_template(
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\flask\templating.py", line 148, in render_template
+    return _render(
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Maria\Documents\Python Scripts\Web\WebApp\templates\results_calculator.html", line 1, in top-level template code
+    {% extends "layout.html" %}
+  File "C:\Users\Maria\Documents\Python Scripts\Web\WebApp\templates\layout.html", line 106, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\Maria\Documents\Python Scripts\Web\WebApp\templates\results_calculator.html", line 22, in block 'content'
+    <td bgcolor="#ffffff">{{fertilizer_measure[1][1]}}- {{fertilizer_measure[1][2]}}- {{fertilizer_measure[1][3]}}-</td>
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\jinja2\environment.py", line 466, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: numpy.ndarray object has no element 1
+2023-03-05 01:54:53,658 ERROR Thread-1-6852: Exception on /calculator [POST] [in app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Users\Maria\Documents\Python Scripts\Web\WebApp\routes.py", line 315, in calculator
+    return render_template("results_calculator.html",title="Sanzar Calculator",form=form,fertilizer_measure=fertilizer_measure)
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\flask\templating.py", line 148, in render_template
+    return _render(
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Maria\Documents\Python Scripts\Web\WebApp\templates\results_calculator.html", line 1, in top-level template code
+    {% extends "layout.html" %}
+  File "C:\Users\Maria\Documents\Python Scripts\Web\WebApp\templates\layout.html", line 106, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\Maria\Documents\Python Scripts\Web\WebApp\templates\results_calculator.html", line 22, in block 'content'
+    <td bgcolor="#ffffff">{{fertilizer_measure[1][1]}}- {{fertilizer_measure[1][2]}}- {{fertilizer_measure[1][3]}}-</td>
+  File "C:\Users\Maria\miniconda3\envs\sanzar\lib\site-packages\jinja2\environment.py", line 466, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: numpy.ndarray object has no element 1
+2023-03-06 23:41:41,056 INFO MainThread-4708: Starting the Flask User Management App... [in __init__.py:84]
+2023-03-07 00:00:31,725 INFO MainThread-4116: Starting the Flask User Management App... [in __init__.py:84]
+2023-03-07 00:02:06,284 INFO MainThread-256: Starting the Flask User Management App... [in __init__.py:84]
+2023-03-07 00:09:14,074 INFO MainThread-5464: Starting the Flask User Management App... [in __init__.py:84]
+2023-03-07 00:14:10,906 INFO MainThread-6820: Starting the Flask User Management App... [in __init__.py:84]
+2023-03-07 00:14:16,509 INFO Thread-1-8252: Starting the Flask User Management App... [in __init__.py:84]
+2023-03-07 00:36:59,994 INFO MainThread-14440: Starting the Flask User Management App... [in __init__.py:84]
+2023-03-07 00:41:15,279 INFO MainThread-10284: Starting the Flask User Management App... [in __init__.py:84]
+2023-03-07 21:40:29,982 INFO MainThread-19412: Starting the Flask User Management App... [in __init__.py:84]
+2023-03-07 21:40:38,172 INFO Thread-1-10624: Starting the Flask User Management App... [in __init__.py:84]
+2023-03-07 21:45:41,349 INFO Thread-1-18584: Starting the Flask User Management App... [in __init__.py:84]
+2023-03-07 21:48:23,129 INFO Thread-1-17996: Starting the Flask User Management App... [in __init__.py:84]

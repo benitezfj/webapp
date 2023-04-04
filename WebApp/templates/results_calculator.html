@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="content-section">
+  <form method="POST" action="">
+    {{ form.hidden_tag() }}
+    <fieldset class="form-group">
+
+      <legend class="border-bottom mb-4">Calculate Fertilizer Map</legend>
+      <table>
+        <thead>
+          <tr>
+            <th>NPK Commercial</th>
+            <th>Posology (Kg/ha)</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in fertilizer_measure %}
+          <tr>
+            <td bgcolor="#ffffff">{{fertilizer_measure[item][1][0]}}- {{fertilizer_measure[item][1][1]}}-
+              {{fertilizer_measure[item][1][2]}}-</td>
+            <td bgcolor="#ffffff">{{fertilizer_measure[item][0]}}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </fieldset>
+  </form>
+</div>
+{% endblock content %}

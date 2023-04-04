@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% block content %}
+  <table id="data" class="table table-striped">
+    <thead>
+      <tr>
+        <th>Farmland Name</th>
+        <th>Crop</th>
+        <th>Sow Date</th>
+        <th>Harvest Date</th>
+        <th>Production Expected (Tons/ha)</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for land in lands %}
+        <tr>
+          <td>{{ land.name }}</td>
+          <td>{{ land.description }}</td>
+          <td>{{ land.sow_date }}</td>
+          <td>{{ land.harvest_date }}</td>
+          <td>{{ land.product_expected }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
+
+{% block scripts %}
+  <script>
+    $(document).ready(function () {
+      $('#data').DataTable({
+        columns: [
+          null,
+          {searchable: false},
+          {orderable: false, searchable: false},
+          {orderable: false, searchable: false},
+          null],
+      });
+    });
+  </script>
+{% endblock %}
