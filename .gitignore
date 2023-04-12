@@ -1,9 +1,10 @@
+.vscode/
 __pycache__/
 WebApp/__pycache__/
-.vscode/
+instance/
 
 .env
 
 key.json
-
+key2.json
 pagekite.py
